@@ -1,0 +1,125 @@
+/* Base styles & resets */
+:root{
+  --red: #EE0808;
+  --red-purple: #DE005B;
+  --purple: #AC2C89;
+  --dark-purple: #694993;
+  --blue: #334F7E;
+  --dark-gray: #2F4858;
+  --light-gray: #a88686;
+  --beige: #FFAA7D;
+}
+html {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(46, 45, 48);
+  background-image: linear-gradient(to bottom, var(--light-gray), var(--dark-gray));
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+a {
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+a:hover,
+a:active {
+  color:var(--beige)
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global components */
+
+.btn {
+  cursor: pointer;
+  font: inherit;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--dark-gray);
+  border-color: var(--dark-gray);
+  color: white;
+}
+
+.btn.btn-alt {
+  background-color: transparent; 
+  border-color: transparent;
+  color:whitesmoke;
+}
+
+.btn.btn-alt:hover,
+.btn.btn-alt:active {
+  color:var(--beige);
+}
+
+/* Site-wide content / elements */
+
+#main-header {
+  padding: 7rem 10%;
+  background-image: linear-gradient(to right , var(--red), var(--beige));
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#main-header ul {
+  display: flex;
+}
+
+#main-header li {
+  margin-left: 2rem;
+}
+
+#main-header nav a {
+  color: white;
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover,
+#main-header nav a:active {
+  color:var(--dark-gray);
+}
+#main-footer{
+  padding: 3rem 10%;
+  background-color: #2F4858;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#main-footer nav > ul{
+  display: flex;
+}
+#main-footer > nav > ul > li {
+  padding: 0 2rem;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
